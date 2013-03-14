@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA56495C16EFB94400D5C241 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA56495B16EFB94400D5C241 /* UIKit.framework */; };
+		FA56495E16EFB94400D5C241 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA56495D16EFB94400D5C241 /* Foundation.framework */; };
+		FA56496016EFB94400D5C241 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA56495F16EFB94400D5C241 /* CoreGraphics.framework */; };
+		FA56496616EFB94500D5C241 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA56496416EFB94400D5C241 /* InfoPlist.strings */; };
+		FA56496816EFB94500D5C241 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56496716EFB94500D5C241 /* main.m */; };
+		FA56496C16EFB94500D5C241 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56496B16EFB94500D5C241 /* AppDelegate.m */; };
+		FA56496E16EFB94500D5C241 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56496D16EFB94500D5C241 /* Default.png */; };
+		FA56497016EFB94500D5C241 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56496F16EFB94500D5C241 /* Default@2x.png */; };
+		FA56497216EFB94500D5C241 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA56497116EFB94500D5C241 /* Default-568h@2x.png */; };
+		FA56497516EFB94500D5C241 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56497416EFB94500D5C241 /* ViewController.m */; };
+		FA56497816EFB94500D5C241 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA56497616EFB94500D5C241 /* ViewController.xib */; };
+		FA56498116EFB97400D5C241 /* BRLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56498016EFB97400D5C241 /* BRLocalNotification.m */; };
+		FA56498416EFBF9000D5C241 /* BRLocalNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA56498316EFBF9000D5C241 /* BRLocalNotificationView.m */; };
+		FAAE53F016F13C8F000366E5 /* BRLocalNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAE53EF16F13C8F000366E5 /* BRLocalNotificationCenter.m */; };
+		FAAE53F216F28786000366E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE53F116F28786000366E5 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA56495816EFB94400D5C241 /* BRLocalNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRLocalNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA56495B16EFB94400D5C241 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA56495D16EFB94400D5C241 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA56495F16EFB94400D5C241 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA56496316EFB94400D5C241 /* BRLocalNotification-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRLocalNotification-Info.plist"; sourceTree = "<group>"; };
+		FA56496516EFB94500D5C241 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA56496716EFB94500D5C241 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA56496916EFB94500D5C241 /* BRLocalNotification-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BRLocalNotification-Prefix.pch"; sourceTree = "<group>"; };
+		FA56496A16EFB94500D5C241 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA56496B16EFB94500D5C241 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA56496D16EFB94500D5C241 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FA56496F16EFB94500D5C241 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FA56497116EFB94500D5C241 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA56497316EFB94500D5C241 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA56497416EFB94500D5C241 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA56497716EFB94500D5C241 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		FA56497F16EFB97400D5C241 /* BRLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLocalNotification.h; sourceTree = "<group>"; };
+		FA56498016EFB97400D5C241 /* BRLocalNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLocalNotification.m; sourceTree = "<group>"; };
+		FA56498216EFBF9000D5C241 /* BRLocalNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLocalNotificationView.h; sourceTree = "<group>"; };
+		FA56498316EFBF9000D5C241 /* BRLocalNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLocalNotificationView.m; sourceTree = "<group>"; };
+		FAAE53EE16F13C8F000366E5 /* BRLocalNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLocalNotificationCenter.h; sourceTree = "<group>"; };
+		FAAE53EF16F13C8F000366E5 /* BRLocalNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLocalNotificationCenter.m; sourceTree = "<group>"; };
+		FAAE53F116F28786000366E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA56495516EFB94400D5C241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE53F216F28786000366E5 /* QuartzCore.framework in Frameworks */,
+				FA56495C16EFB94400D5C241 /* UIKit.framework in Frameworks */,
+				FA56495E16EFB94400D5C241 /* Foundation.framework in Frameworks */,
+				FA56496016EFB94400D5C241 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA56494F16EFB94400D5C241 = {
+			isa = PBXGroup;
+			children = (
+				FA56497E16EFB94F00D5C241 /* Source */,
+				FA56496116EFB94400D5C241 /* BRLocalNotification */,
+				FA56495A16EFB94400D5C241 /* Frameworks */,
+				FA56495916EFB94400D5C241 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA56495916EFB94400D5C241 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA56495816EFB94400D5C241 /* BRLocalNotification.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA56495A16EFB94400D5C241 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE53F116F28786000366E5 /* QuartzCore.framework */,
+				FA56495B16EFB94400D5C241 /* UIKit.framework */,
+				FA56495D16EFB94400D5C241 /* Foundation.framework */,
+				FA56495F16EFB94400D5C241 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA56496116EFB94400D5C241 /* BRLocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				FA56496A16EFB94500D5C241 /* AppDelegate.h */,
+				FA56496B16EFB94500D5C241 /* AppDelegate.m */,
+				FA56497316EFB94500D5C241 /* ViewController.h */,
+				FA56497416EFB94500D5C241 /* ViewController.m */,
+				FA56497616EFB94500D5C241 /* ViewController.xib */,
+				FA56496216EFB94400D5C241 /* Supporting Files */,
+			);
+			path = BRLocalNotification;
+			sourceTree = "<group>";
+		};
+		FA56496216EFB94400D5C241 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA56496316EFB94400D5C241 /* BRLocalNotification-Info.plist */,
+				FA56496416EFB94400D5C241 /* InfoPlist.strings */,
+				FA56496716EFB94500D5C241 /* main.m */,
+				FA56496916EFB94500D5C241 /* BRLocalNotification-Prefix.pch */,
+				FA56496D16EFB94500D5C241 /* Default.png */,
+				FA56496F16EFB94500D5C241 /* Default@2x.png */,
+				FA56497116EFB94500D5C241 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA56497E16EFB94F00D5C241 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FA56497F16EFB97400D5C241 /* BRLocalNotification.h */,
+				FA56498016EFB97400D5C241 /* BRLocalNotification.m */,
+				FAAE53EE16F13C8F000366E5 /* BRLocalNotificationCenter.h */,
+				FAAE53EF16F13C8F000366E5 /* BRLocalNotificationCenter.m */,
+				FA56498216EFBF9000D5C241 /* BRLocalNotificationView.h */,
+				FA56498316EFBF9000D5C241 /* BRLocalNotificationView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA56495716EFB94400D5C241 /* BRLocalNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA56497B16EFB94500D5C241 /* Build configuration list for PBXNativeTarget "BRLocalNotification" */;
+			buildPhases = (
+				FA56495416EFB94400D5C241 /* Sources */,
+				FA56495516EFB94400D5C241 /* Frameworks */,
+				FA56495616EFB94400D5C241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRLocalNotification;
+			productName = BRLocalNotification;
+			productReference = FA56495816EFB94400D5C241 /* BRLocalNotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA56495016EFB94400D5C241 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Bender;
+			};
+			buildConfigurationList = FA56495316EFB94400D5C241 /* Build configuration list for PBXProject "BRLocalNotification" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA56494F16EFB94400D5C241;
+			productRefGroup = FA56495916EFB94400D5C241 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA56495716EFB94400D5C241 /* BRLocalNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA56495616EFB94400D5C241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA56496616EFB94500D5C241 /* InfoPlist.strings in Resources */,
+				FA56496E16EFB94500D5C241 /* Default.png in Resources */,
+				FA56497016EFB94500D5C241 /* Default@2x.png in Resources */,
+				FA56497216EFB94500D5C241 /* Default-568h@2x.png in Resources */,
+				FA56497816EFB94500D5C241 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA56495416EFB94400D5C241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA56496816EFB94500D5C241 /* main.m in Sources */,
+				FA56496C16EFB94500D5C241 /* AppDelegate.m in Sources */,
+				FA56497516EFB94500D5C241 /* ViewController.m in Sources */,
+				FA56498116EFB97400D5C241 /* BRLocalNotification.m in Sources */,
+				FA56498416EFBF9000D5C241 /* BRLocalNotificationView.m in Sources */,
+				FAAE53F016F13C8F000366E5 /* BRLocalNotificationCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA56496416EFB94400D5C241 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA56496516EFB94500D5C241 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA56497616EFB94500D5C241 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA56497716EFB94500D5C241 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA56497916EFB94500D5C241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA56497A16EFB94500D5C241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA56497C16EFB94500D5C241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRLocalNotification/BRLocalNotification-Prefix.pch";
+				INFOPLIST_FILE = "BRLocalNotification/BRLocalNotification-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA56497D16EFB94500D5C241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRLocalNotification/BRLocalNotification-Prefix.pch";
+				INFOPLIST_FILE = "BRLocalNotification/BRLocalNotification-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA56495316EFB94400D5C241 /* Build configuration list for PBXProject "BRLocalNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA56497916EFB94500D5C241 /* Debug */,
+				FA56497A16EFB94500D5C241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA56497B16EFB94500D5C241 /* Build configuration list for PBXNativeTarget "BRLocalNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA56497C16EFB94500D5C241 /* Debug */,
+				FA56497D16EFB94500D5C241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA56495016EFB94400D5C241 /* Project object */;
+}
