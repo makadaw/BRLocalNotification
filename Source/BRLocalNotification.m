@@ -38,6 +38,10 @@
     if (_notificationView == nil) {
         _notificationView = [[BRLocalNotificationView alloc] init];
         _notificationView.alerLabel.text = self.localNotification.alertBody;
+        NSString *applicationName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+        _notificationView.applicationLabel.text = applicationName;
+        UIImage *icon = [UIImage imageNamed:@"icon"];
+        _notificationView.iconView.image = icon;
     }
     return _notificationView;
 }

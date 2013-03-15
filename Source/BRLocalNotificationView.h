@@ -10,6 +10,8 @@
 
 
 @interface BRLocalNotificationView : UIControl
+@property (strong, readonly) UILabel *applicationLabel;
 @property (strong, readonly) UILabel *alerLabel;
+@property (strong, readonly) UIImageView *iconView;
 
 @end

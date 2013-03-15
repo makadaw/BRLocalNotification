@@ -35,6 +35,7 @@
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     df.timeStyle = NSDateFormatterFullStyle;
     notification.alertBody = [df stringFromDate:[NSDate date]];
+    notification.alertAction = @"Action";
     UIApplication *application = [UIApplication sharedApplication];
     [application scheduleLocalNotification:notification];
 }

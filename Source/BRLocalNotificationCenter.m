@@ -11,6 +11,8 @@
 #import "BRLocalNotificationView.h"
 #import <QuartzCore/CoreAnimation.h>
 
+#define DEFAULT_ANIMATION_TIME .7
+
 @interface BRLocalNotificationCenter ()
 @property (strong) NSMutableArray *notificationsQueue;
 @property (weak) BRLocalNotification *currentNotification;
@@ -53,15 +55,18 @@
         self.currentNotification = notification;
         
         BRLocalNotificationView *view = notification.notificationView;
-        view.frame = CGRectMake(0, -80, self.window.frame.size.width, 80);
+        view.frame = CGRectMake(0, -80, self.window.bounds.size.width, 40);
         [view addTarget:self
                  action:@selector(notificationAction:)
        forControlEvents:UIControlEventTouchUpInside];
         [self.window addSubview:view];
+        [self.window bringSubviewToFront:view];
         
-        [UIView animateWithDuration:2 animations:^(){
+        [UIView animateWithDuration:DEFAULT_ANIMATION_TIME animations:^(){
             view.center = CGPointMake(self.window.bounds.size.width/2, 40);
         }];
+        
+        [UIView animateWithDuration:DEFAULT_ANIMATION_TIME animations:^(){} completion:^(BOOL finished){}];
         
         if (self.timer) {
             [self.timer invalidate];
@@ -86,10 +91,19 @@
     if (self.timer) {
         [self.timer invalidate];
     }
-    [self.currentNotification.notificationView removeFromSuperview];
-    [self.notificationsQueue removeObject:self.currentNotification];
-    self.currentNotification = nil;
-    [self showFirstNotification];
+    self.currentNotification.notificationView.userInteractionEnabled = NO;
+    CGPoint center = self.currentNotification.notificationView.center;
+    center.y = -40;
+    [UIView animateWithDuration:DEFAULT_ANIMATION_TIME
+                     animations:^(){
+                         self.currentNotification.notificationView.center = center;
+                     }
+                     completion:^(BOOL finished){
+                         [self.currentNotification.notificationView removeFromSuperview];
+                         [self.notificationsQueue removeObject:self.currentNotification];
+                         self.currentNotification = nil;
+                         [self showFirstNotification];
+                     }];
 }
 
 - (UIView*)window
