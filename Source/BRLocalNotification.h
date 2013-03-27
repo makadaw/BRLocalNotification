@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BRLocalNotificationCenter.h"
 
 @class BRLocalNotificationView;
 
 @interface BRLocalNotification : NSObject
+@property (strong, readonly) UILocalNotification *localNotification;
 @property (nonatomic, strong, readonly) BRLocalNotificationView *notificationView;
 
 - (id)initWithLocalNotification:(UILocalNotification*)localNotification;

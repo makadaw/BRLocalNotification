@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BRLocalNotificationDelegate.h"
 
 @class BRLocalNotification;
 
 @interface BRLocalNotificationCenter : NSObject
+@property id<BRLocalNotificationDelegate> delegate;
 
 + (BRLocalNotificationCenter*)defaultCenter;
 

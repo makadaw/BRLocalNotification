@@ -53,9 +53,22 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     if(application.applicationState == UIApplicationStateActive ) {
+        [[UIApplication sharedApplication] cancelLocalNotification:notification];
         BRLocalNotification *localNotification = [[BRLocalNotification alloc] initWithLocalNotification:notification];
         [localNotification show];
+    } else {
+        [self activateNotification:notification];
     }
+}
+
+- (void)application:(UIApplication *)application didActivatedLocalNotification:(UILocalNotification *)notification
+{
+    [self activateNotification:notification];
+}
+
+- (void)activateNotification:(UILocalNotification*)notification
+{
+    NSLog(@"Local notification activeted");
 }
 
 @end

@@ -66,8 +66,6 @@
             view.center = CGPointMake(self.window.bounds.size.width/2, 40);
         }];
         
-        [UIView animateWithDuration:DEFAULT_ANIMATION_TIME animations:^(){} completion:^(BOOL finished){}];
-        
         if (self.timer) {
             [self.timer invalidate];
         }
@@ -81,8 +79,9 @@
     }
 }
 
-- (void)notificationAction:(id)sender
+- (void)notificationAction:(BRLocalNotificationView*)sender
 {
+    [self firedCurentNotificationAction];
     [self showNextNotification];
 }
 
@@ -104,6 +103,20 @@
                          self.currentNotification = nil;
                          [self showFirstNotification];
                      }];
+}
+
+- (void)firedCurentNotificationAction
+{
+    if (self.delegate != nil) {
+        [self.delegate application:[UIApplication sharedApplication]
+     didActivatedLocalNotification:self.currentNotification.localNotification];
+    }
+    id<UIApplicationDelegate> delegate = [UIApplication sharedApplication].delegate;
+    if ([delegate conformsToProtocol:@protocol(BRLocalNotificationDelegate)]) {
+        id<BRLocalNotificationDelegate> notificationDelegate = (id<BRLocalNotificationDelegate>)[UIApplication sharedApplication].delegate;
+        [notificationDelegate application:[UIApplication sharedApplication] didActivatedLocalNotification:self.currentNotification.localNotification];
+        
+    }
 }
 
 - (UIView*)window

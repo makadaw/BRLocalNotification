@@ -31,7 +31,7 @@
 - (IBAction)fireAction:(id)sender
 {
     UILocalNotification *notification = [[UILocalNotification alloc] init];
-    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:.2];
+    notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:2];
     NSDateFormatter *df = [[NSDateFormatter alloc] init];
     df.timeStyle = NSDateFormatterFullStyle;
     notification.alertBody = [df stringFromDate:[NSDate date]];

@@ -48,6 +48,7 @@
 		FAAE53EE16F13C8F000366E5 /* BRLocalNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRLocalNotificationCenter.h; sourceTree = "<group>"; };
 		FAAE53EF16F13C8F000366E5 /* BRLocalNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLocalNotificationCenter.m; sourceTree = "<group>"; };
 		FAAE53F116F28786000366E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FABEB713170392AA00D1E020 /* BRLocalNotificationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRLocalNotificationDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		FA56497E16EFB94F00D5C241 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FABEB713170392AA00D1E020 /* BRLocalNotificationDelegate.h */,
 				FA56497F16EFB97400D5C241 /* BRLocalNotification.h */,
 				FA56498016EFB97400D5C241 /* BRLocalNotification.m */,
 				FAAE53EE16F13C8F000366E5 /* BRLocalNotificationCenter.h */,

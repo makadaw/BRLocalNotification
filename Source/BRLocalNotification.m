@@ -7,11 +7,10 @@
 //
 
 #import "BRLocalNotification.h"
-#import "BRLocalNotificationCenter.h"
 #import "BRLocalNotificationView.h"
 
 @interface BRLocalNotification ()
-@property (strong) UILocalNotification *localNotification;
+@property (strong, readwrite) UILocalNotification *localNotification;
 @property (nonatomic, strong, readwrite) BRLocalNotificationView *notificationView;
 
 @end
